@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!---*here class is attribut and container is value*/-->
+    <div class="box formInputs">
+      <h3 class="title">Student Details</h3>
+      <form>
+        <div class="fields">
+          <label for="schoolName">School Name:</label>
+          <input id="schoolName" />
+        </div>
+
+        <div class="fields">
+          <label for="studentName">Student Name:</label>
+          <input id="studentName" />
+        </div>
+
+        <div class="fields">
+          <label for="dateOfBirth">Date of birth:</label>
+          <input id="dateOfBirth" />
+        </div>
+
+        <div class="fields">
+          <label for="class">Class:</label>
+          <input id="class" />
+        </div>
+
+        <div class="fields">
+          <label for="rollNumber">Roll Number:</label>
+          <input id="rollNumber" type="number" />
+        </div>
+
+        <div class="fields">
+          <label for="contactNumber">Contact Number:</label>
+          <input id="contactNumber" type="number" />
+        </div>
+
+        <div class="buttonContainer">
+          <button class="btn" type="button" onclick="updateCard()">
+            Submit Form
+          </button>
+          <button class="btn ml-10" type="button" onclick="clearAll()">
+            Clear All
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="box card">
+      <!--here div is element class is attribute and box is value -->
+
+      <h3 class="title" id="schoolNameVal">School Name</h3>
+      <div class="imageContainer">
+        <img src="./images/abc.png" alt="student profile" />
+      </div>
+      
+      <div class="fields">
+        <label>Student Name:</label>
+        <label id="studentNameVal">Rishabh</label>
+      </div>
+
+      <div class="fields">
+        <label>Date Of birth:</label>
+        <label id="dateOfBirthVal">21/07/2015</label>
+      </div>
+
+      <div class="fields">
+        <label>Class:</label>
+        <label id="classVal">10</label>
+      </div>
+
+      <div class="fields">
+        <label>Roll Number</label>
+        <label id="rollNumberVal">21</label>
+      </div>
+
+      <div class="fields">
+        <label>Contact Number</label>
+        <label id="contactNumberVal">9999999999</label>
+      </div>
+
+      <div class="buttonContainer">
+        <div class="btn print" type="button"  onclick="printIdCard()">print Id Card</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
